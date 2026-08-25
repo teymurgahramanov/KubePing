@@ -27,16 +27,8 @@ __ICMP (Ping)__ Verifying network reachability
 The results are aggregated and exposed as Prometheus metrics:
 ```
 kubeping_probe_result{address="api.example.az:8080", instance="worker-node-1", job="kubeping", module="tcp", target="target1"}=1
-kubeping_probe_result{address="api.example.az:8080", instance="worker-node-2", job="kubeping", module="tcp", target="target1"}=0
-kubeping_probe_result{address="api.example.az:8080", instance="worker-node-3", job="kubeping", module="tcp", target="target1"}=1
-
 kubeping_probe_result{address="https://example.az", instance="worker-node-1", job="kubeping", module="http", target="target2"}=0
-kubeping_probe_result{address="https://example.az", instance="worker-node-2", job="kubeping", module="http", target="target2"}=1
-kubeping_probe_result{address="https://example.az", instance="worker-node-3", job="kubeping", module="http", target="target2"}=1
-
 kubeping_probe_result{address="192.168.0.1", instance="worker-node-1", job="kubeping", module="icmp", target="target3"}=1
-kubeping_probe_result{address="192.168.0.1", instance="worker-node-2", job="kubeping", module="icmp", target="target3"}=0
-kubeping_probe_result{address="192.168.0.1", instance="worker-node-3", job="kubeping", module="icmp", target="target3"}=1
 ```
 
 ## Instant checks
