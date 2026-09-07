@@ -1,10 +1,8 @@
-# KubePing 1.2.0
+# KubePing 1.2.1
 
-- 🌐 **HTTP and ICMP probes:** Added HTTP and ICMP probe modules alongside TCP. Select the desired module from the new dropdown in the web UI.
-- ✨ **Refined web UI:** Improved the interface for a cleaner and more polished experience.
-- 🔐 **Optional TLS validation:** HTTP probes can verify TLS certificates and report the original error, including expired certificates, hostname mismatches, untrusted certificate authorities, and handshake failures. Validation can also be disabled when required.
-- 🐳 **Unified Docker Hub repository:** Web and exporter images are now published to `teymurgahramanov/kubeping`, using the `web-<version>` and `exporter-<version>` tag formats.
-- 🚀 **Go upgrade:** Exporter upgraded to Go 1.27.0 (from 1.21.6).
-- ✅ **Test coverage:** Added unit tests for the TCP, HTTP, and ICMP probe modules and the `/probe` HTTP handler.
+- 📋 **Copy results:** Added a copy-to-clipboard button in the results table header. Copies the table as both rich HTML (for spreadsheets and docs) and plain text.
+- 🏷️ **Method and Source:** Renamed the probe form "Module" label to "Method" and the results table "Host" column to "Source" for clarity.
+- 🐳 **Multi-architecture images:** Web and exporter container images are now built for both `linux/amd64` and `linux/arm64`.
+- 🛠️ **Helm chart fixes:** Image tags now use component-prefixed format (`web-<version>`, `exporter-<version>`) and both images point at the unified `teymurgahramanov/kubeping` repository.
 
 For the complete list of changes, see the [changelog](./CHANGELOG.md).

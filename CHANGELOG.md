@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## [1.2.1]
+
+### Added
+- Copy-to-clipboard button in the results table header (copies both rich HTML and plain text)
+- ARM64 support for web and exporter container images, built alongside amd64 in the release workflow
+
+### Changed
+- Renamed the probe form "Module" label to "Method"
+- Renamed the results table "Host" column to "Source"
+- Simplified the ICMP address placeholder to "host"
+
+### Fixed
+- Helm chart now uses component-prefixed image tags (`web-<version>`, `exporter-<version>`) matching the tags published by the release workflow
+- Unified Helm image repositories to `teymurgahramanov/kubeping` for both web and exporter
+- Trimmed redundant example Prometheus metrics from the README
+
 ## [1.2.0]
 
 ### Added

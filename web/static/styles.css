@@ -290,6 +290,7 @@ button[type="submit"].loading .btn-loading {
 .results-target {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
   font-size: 1.15rem;
   font-weight: 400;
